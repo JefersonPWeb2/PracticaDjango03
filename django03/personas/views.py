@@ -19,4 +19,4 @@ def personaCreateView(request):
     context = {
         'form' : form
         }
-    return render(request, 'persnas/personasCreate.html', context)
+    return render(request, 'personas/personasCreate.html', context)
