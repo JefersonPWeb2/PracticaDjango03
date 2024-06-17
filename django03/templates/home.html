@@ -8,13 +8,15 @@
 </p>
 <ul>
     {% for myItem in myList %}
-        <li>{{ forloop.counter }} - {{ myItem|add:2 }}</li>
+        <li>{{ forloop.counter }} - {{ myItem|add:2 }}
         {% if myItem == 33 %}
             - Este número es mágico
         {% elif myItem|divisibleby:2 %}
             - Este número es par
         {% elif myItem > 50 %}
             - Este número es mayor que 50
+        {% endif %}
+        </li>
     {% endfor %}
 </ul>
 {% endblock %}
